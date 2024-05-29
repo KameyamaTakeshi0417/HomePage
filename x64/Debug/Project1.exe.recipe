@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Users\takeshi\source\repos\portfolio\x64\Debug\Project1.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles>
+    <ContentFile>
+      <FullPath>C:\Users\takeshi\source\repos\portfolio\portfolio\Gallaley.htm</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\takeshi\source\repos\portfolio\portfolio\game.htm</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\takeshi\source\repos\portfolio\portfolio\index.htm</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\takeshi\source\repos\portfolio\portfolio\profile.htm</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\takeshi\source\repos\portfolio\portfolio\proposal1.htm</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\takeshi\source\repos\portfolio\portfolio\proposal2.htm</FullPath>
+    </ContentFile>
+  </ContentFiles>
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

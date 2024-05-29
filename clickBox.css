@@ -1,0 +1,134 @@
+/* クリックボックスのスタイル */
+.click-box {
+    position: fixed;
+    left: 0;
+    bottom: 50%;
+    width: 80px;
+    height: 70px;
+    background-color: #AAAAAA;
+    opacity: 0.5;
+    transition: width 0.3s ease;
+    background-size: cover;
+    background-image: url('resources/home.png'); /* 画像のパスを指定 */
+    background-repeat: no-repeat;
+    background-position: right center; /* 画像を右端に配置 */
+}
+
+    .click-box:hover {
+        width: 200px;
+        opacity: 1;
+        background-size: 80px 70px; /* スライド後は元のサイズを維持 */
+    }
+
+    .click-box img {
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .click-box:hover img {
+        display: block;
+    }
+
+.button:hover span.text {
+    display: inline-block; /* ホバー時にテキストを表示 */
+    text-align: left; /* 左中央揃え */
+}
+
+.click-boxGal {
+    position: fixed;
+    left: 0;
+    bottom: 50%;
+    width: 80px;
+    height: 70px;
+    background-color: #AAAAAA;
+    opacity: 0.5;
+    transition: width 0.3s ease;
+    background-size: cover;
+    background-image: url('resources/art.png'); /* 画像のパスを指定 */
+    background-repeat: no-repeat;
+    background-position: right center; /* 画像を右端に配置 */
+}
+
+    .click-boxGal:hover {
+        width: 200px;
+        opacity: 1;
+        background-size: 80px 70px; /* スライド後は元のサイズを維持 */
+    }
+
+    .click-boxGal img {
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .click-boxGal:hover img {
+        display: block;
+    }
+
+
+.click-boxProf {
+    position: fixed;
+    left: 0;
+    bottom: 50%;
+    width: 80px;
+    height: 70px;
+    background-color: #AAAAAA;
+    opacity: 0.5;
+    transition: width 0.3s ease;
+    background-size: cover;
+    background-image: url('resources/human.png'); /* 画像のパスを指定 */
+    background-repeat: no-repeat;
+    background-position: right center; /* 画像を右端に配置 */
+}
+
+    .click-boxProf:hover {
+        width: 200px;
+        opacity: 1;
+        background-size: 80px 70px; /* スライド後は元のサイズを維持 */
+    }
+
+    .click-boxProf img {
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .click-boxProf:hover img {
+        display: block;
+    }
+
+.click-boxExplain {
+    position: fixed;
+    left: 0;
+    bottom: 50%;
+    width: 80px;
+    height: 70px;
+    background-color: #AAAAAA;
+    opacity: 1;
+    transition: width 0.3s ease;
+    background-image: url("resources/comment.png");
+    background-size: cover;
+}
+
+    .click-boxExplain:hover {
+        width: 600px;
+        height: 500px;
+        opacity: 0.5;
+    }
+
+    .click-boxExplain img {
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .click-boxExplain:hover img {
+        display: block;
+    }
+
+
+.button:hover span.text {
+    display: inline-block; /* ホバー時にテキストを表示 */
+    text-align: left; /* 左中央揃え */
+}
