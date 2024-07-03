@@ -8,7 +8,9 @@ body {
     display: flex; /* 子要素を水平に配置するために flex を使用 */
     justify-content: center; /* 子要素を中央に配置 */
     align-items: center; /* 子要素を垂直方向に中央に配置 */
-    height: 100%; /* 画面の高さいっぱいに広がるように設定 */
+    width: 80%; /* ボタンコンテナの幅を画面の80%に設定 */
+    height: 50%; /* ボタンコンテナの高さを画面の50%に設定 */
+    margin: auto; /* ボタンコンテナを中央に配置 */
 }
 
 .button {

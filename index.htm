@@ -8,10 +8,57 @@
     <link rel="stylesheet" type="text/css" href="5-9.css">
     <link rel="stylesheet" href="button.css">
     <link rel="stylesheet" href="clickBox.css">
+    <style>
+        body {
+            text-align: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .button-container {
+            display: flex; /* 子要素を水平に配置するために flex を使用 */
+            justify-content: center; /* 子要素を中央に配置 */
+            align-items: center; /* 子要素を垂直方向に中央に配置 */
+            width: 80%; /* ボタンコンテナの幅を画面の80%に設定 */
+            height: 50%; /* ボタンコンテナの高さを画面の50%に設定 */
+            margin: auto; /* ボタンコンテナを中央に配置 */
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 10px; /* ボタン間の横の余白を調整 */
+            transition: transform 0.3s;
+        }
+
+            .button:hover {
+                background-color: #0056b3;
+                transform: scale(1.1);
+            }
+
+        /* レスポンシブデザインのためのメディアクエリ */
+        @media (max-width: 100px) {
+            .button-container {
+                width: 90%; /* タブレットサイズでの幅を調整 */
+                height: 60%; /* タブレットサイズでの高さを調整 */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .button-container {
+                width: 100%; /* スマートフォンサイズでの幅を調整 */
+                height: 70%; /* スマートフォンサイズでの高さを調整 */
+                flex-direction: column; /* 子要素を縦方向に配置 */
+            }
+        }
+    </style>
 </head>
 <body>
     <div id="particles-js"></div>
-    <img src="resources/logo.png" alt="Image" width="1400" height="125">
+    <img src="resources/logo.png" alt="Image" width="500" height="125">
     <div class="centered">
         <div class="button-container">
             <a href="profile.htm" class="button">

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tier List</title>
+    <link rel="stylesheet" href="tierlist.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .tier-list {
+            width: 80%;
+            margin: auto;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .tier {
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        .tier-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .tier-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .tier-item {
+            flex: 1 0 21%; /* 4 items per row */
+            margin: 5px;
+            text-align: center;
+            position: relative; /* 親要素を相対位置に設定 */
+        }
+
+            .tier-item img {
+                width: 100%;
+                height: auto;
+                max-width: 150px;
+                max-height: 150px;
+                object-fit: cover; /* 画像を正方形にクロップ */
+                border-radius: 5px;
+            }
+
+            .tier-item:hover .tooltip {
+                visibility: visible;
+                opacity: 1;
+            }
+
+        .tooltip {
+            visibility: hidden;
+            opacity: 0;
+            width: 150px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; /* アイテムの上に表示 */
+            left: 50%;
+            margin-left: -75px;
+            transition: opacity 0.3s;
+        }
+
+            .tooltip::after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                margin-left: -5px;
+                border-width: 5px;
+                border-style: solid;
+                border-color: #333 transparent transparent transparent;
+            }
+
+        .tier-s {
+            background-color: #ffd700; /* gold */
+        }
+
+        .tier-a {
+            background-color: #c0c0c0; /* silver */
+        }
+
+        .tier-b {
+            background-color: #cd7f32; /* bronze */
+        }
+
+        .tier-c {
+            background-color: #e0e0e0; /* default */
+        }
+    </style>
+</head>
+<body>
+    <div class="tier-list">
+        <div class="tier tier-s">
+            <div class="tier-title">S Tier</div>
+            <div class="tier-items">
+                <div class="tier-item">
+                    <img src="images/S1.jpg" alt="S1">
+                    <div class="tooltip">Comment for S1</div>
+                </div>
+                <div class="tier-item">
+                    <img src="images/S2.jpg" alt="S2">
+                    <div class="tooltip">Comment for S2</div>
+                </div>
+                <div class="tier-item">
+                    <img src="images/S3.jpg" alt="S3">
+                    <div class="tooltip">Comment for S3</div>
+                </div>
+                <div class="tier-item">
+                    <img src="images/S4.jpg" alt="S4">
+                    <div class="tooltip">Comment for S4</div>
+                </div>
+            </div>
+        </div>
+        <div class="tier tier-a">
+            <div class="tier-title">A Tier</div>
+            <div class="tier-items">
+                <div class="tier-item">
+                    <img src="images/A1.jpg" alt="A1">
+                    <div class="tooltip">Comment for A1</div>
+                </div>
+                <div class="tier-item">
+                    <img src="images/A2.jpg" alt="A2">
+                    <div class="tooltip">Comment for A2</div>
+                </div>
+                <div class="tier-item">
+                    <img src="images/A3.jpg" alt="A3">
+                    <div class="tooltip">Comment for A3</div>
+                </div>
+                <div class="tier-item">
+                    <img src="images/A4.jpg" alt="A4">
+                    <div class="tooltip">Comment for A4</div>
+                </div>
+            </div>
+        </div>
+        <div class="tier tier-b">
+            <div class="tier-title">B Tier</div>
+            <div class="tier-items">
+                <div class="tier-item">
+                    <img src="images/B1.jpg" alt="B1">
+                    <div class="tooltip">Comment for B1</div>
+                </div>
+                <div class="tier-item">
+                    <img src="images/B2.jpg" alt="B2">
+                    <div class="tooltip">Comment for B2</div>
+                </div>
+                <div class="tier-item">
+                    <img src="images/B3.jpg" alt="B3">
+                    <div class="tooltip">Comment for B3</div>
+                </div>
+                <div class="tier-item">
+                    <img src="images/B4.jpg" alt="B4">
+                    <div class="tooltip">Comment for B4</div>
+                </div>
+            </div>
+        </div>
+        <div class="tier tier-c">
+            <div class="tier-title">C Tier</div>
+            <div class="tier-items">
+                <div class="tier-item">
+                    <img src="images/C1.jpg" alt="C1">
+                    <div class="tooltip">Comment for C1</div>
+                </div>
+                <div class="tier-item">
+                    <img src="images/C2.jpg" alt="C2">
+                    <div class="tooltip">Comment for C2</div>
+                </div>
+                <div class="tier-item">
+                    <img src="images/C3.jpg" alt="C3">
+                    <div class="tooltip">Comment for C3</div>
+                </div>
+                <div class="tier-item">
+                    <img src="images/C4.jpg" alt="C4">
+                    <div class="tooltip">Comment for C4</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/*========= ƒŒƒCƒAƒEƒg‚Ì‚½‚ß‚ÌCSS ===============*/
+/*========= ãƒ¬ã‚¤ã‚¢ã‚¦ãƒˆã®ãŸã‚ã®CSS ===============*/
 
 #wrapper {
     display: flex;
@@ -14,23 +14,23 @@ a {
     color: #fff;
 }
 
-/*========= particle js ‚ğ•`‰æ‚·‚éƒGƒŠƒAİ’è ===============*/
+/*========= particle js ã‚’æç”»ã™ã‚‹ã‚¨ãƒªã‚¢è¨­å®š ===============*/
 
 html, body {
-    height: 100%; /*‚‚³‚ğ100%‚É‚µ‚Ä•`‰æƒGƒŠƒA‚ğ‚Æ‚é*/
+    height: 100%; /*é«˜ã•ã‚’100%ã«ã—ã¦æç”»ã‚¨ãƒªã‚¢ã‚’ã¨ã‚‹*/
 }
 
 #particles-js {
-    position: fixed; /*•`‰æŒÅ’è*/
-    z-index: -1; /*•`‰æ‚ğˆê”Ô‰º‚É*/
+    position: fixed; /*æç”»å›ºå®š*/
+    z-index: -1; /*æç”»ã‚’ä¸€ç•ªä¸‹ã«*/
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, #020E34,#87CEEB); /* ƒOƒ‰ƒf[ƒVƒ‡ƒ“‚Ìİ’è */
+    background: linear-gradient(to bottom, #020E34,#87CEEB); /* ã‚°ãƒ©ãƒ‡ãƒ¼ã‚·ãƒ§ãƒ³ã®è¨­å®š */
 }
 
 #wrapper {
-    position: relative; /*•`‰æ‚ğ#particles-js‚æ‚è‚àã‚É‚·‚é‚½‚ßposition:relative;‚ğw’è*/
-    z-index: 1; /*z-index‚Ì”š‚ğ‘å‚«‚­‚·‚é‚±‚Æ‚Å•`‰æ‚ğ#particles-js‚æ‚è‚àã‚É*/
+    position: relative; /*æç”»ã‚’#particles-jsã‚ˆã‚Šã‚‚ä¸Šã«ã™ã‚‹ãŸã‚position:relative;ã‚’æŒ‡å®š*/
+    z-index: 1; /*z-indexã®æ•°å­—ã‚’å¤§ããã™ã‚‹ã“ã¨ã§æç”»ã‚’#particles-jsã‚ˆã‚Šã‚‚ä¸Šã«*/
     width: 100%;
     height: 100%;
 }
