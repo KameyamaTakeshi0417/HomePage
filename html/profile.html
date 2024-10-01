@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby Page</title>
+    <style>
+        /* ページ全体の基本設定 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth; /* スクロールの動作をスムーズに */
+            height: 100%;
+        }
+
+        /* セクションのスタイル */
+        .section {
+            display: flex;
+            align-items: center;
+            height: 100vh; /* 1セクションがビューポートの高さを占める */
+            border-bottom: 1px solid #ccc;
+            overflow: hidden;
+        }
+
+        /* 左側の画像コンテナのスタイル */
+        .left-image {
+            width: 50%; /* 画面の左半分を使用 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 画像のスタイル */
+        .left-image img {
+            max-width: 80%; /* 画像の最大幅を設定 */
+            max-height: 80%; /* 画像の最大高さを設定 */
+            object-fit: contain;
+        }
+
+        /* 右側のテキストコンテナのスタイル */
+        .right-text {
+            width: 50%; /* 画面の右半分を使用 */
+            padding: 20px;
+            text-align: left;
+        }
+
+        /* テキストブロックの基本スタイル */
+        .text-block {
+            margin: 20px 0;
+            opacity: 0; /* 初期状態ではテキストを非表示 */
+        }
+
+        /* セクションのタイトルのスタイル */
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1つ目のセクション -->
+    <div class="section" id="section1" data-speed="20">
+        <div class="left-image">
+            <img src="../image/profile/face.jpeg" alt="Image 1">
+        </div>
+        <div class="right-text">
+            <div class="section-title">名前：亀山健志</div>
+            <div class="text-block">
+                <p>誕生日：1995.10.17 てんびん座</p>
+            </div>
+            <div class="text-block">
+                <p>埼玉県飯能市生まれ。地域の小、中学校に通い、</p>
+            </div>
+            <div class="text-block">
+                <p>埼玉県立所沢西高等学校卒業後、航空自衛隊入隊。</p>
+            </div>
+            <div class="text-block">
+                <p>いろいろやって、ゲーム業界に至る。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2つ目のセクション -->
+    <div class="section" id="section2" data-speed="10">
+        <div class="left-image">
+            <img src="../image/profile/chart.png" alt="chart">
+        </div>
+        <div class="right-text">
+            <div class="section-title">私の業務的ステータス</div>
+            <div class="text-block">
+                <p>各能力値をチャートで表示しています。</p>
+            </div>
+            <div class="text-block">
+                <p>HP:</p>
+                <p>人並外れている。私のメインウェポン。自衛隊での経験に感謝。24時間戦える。</p>
+            </div>
+            <div class="text-block">
+                <p>MP:</p>
+                <p>ほぼ人並み。精神的負荷は体力でカバー。</p>
+            </div>
+            <div class="text-block">
+                <p>Pow:</p>
+                <p>人より少しある。負荷は大歓迎。</p>
+            </div>
+            <div class="text-block">
+                <p>Tec:</p>
+                <p>標準的。このホームページを組める程度のプログラミング能力。</p>
+            </div>
+            <div class="text-block">
+                <p>Spd:</p>
+                <p>不安定。ノリにのった時の速度は我ながらな中々のもの。ここを高水準で安定させるのが私の課題。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3つ目のセクション -->
+    <div class="section" id="section3" data-speed="10">
+        <div class="left-image">
+            <img src="path_to_your_image3.jpg" alt="Image 3">
+        </div>
+        <div class="right-text">
+            <div class="section-title">Title 3</div>
+            <div class="text-block">
+                <p>This is the description for section 3. This section has<br>multiple blocks of text.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4つ目のセクション -->
+    <div class="section" id="section4" data-speed="10">
+        <div class="left-image">
+            <img src="path_to_your_image4.jpg" alt="Image 4">
+        </div>
+        <div class="right-text">
+            <div class="section-title">Title 4</div>
+            <div class="text-block">
+                <p>This is the description for section 4. It can contain<br>different amounts of text in each block.</p>
+            </div>
+            <div class="text-block">
+                <p>Additional text block for section 4.</p>
+            </div>
+        </div>
+    </div>
+    <!-- クリックボックス -->
+    <a href="../index.html" class="click-box" data-top="50px" data-left="0px">
+        <img src="../image/cliclbox/home.png" alt="home">
+        <span class="click-box-text">ホーム</span>
+    </a>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll('.section'); // 全てのセクション要素を取得
+
+            // テキストブロックを順番に処理して表示する関数
+            function activateTextBlocks() {
+                sections.forEach(section => {
+                    const textBlocks = section.querySelectorAll('.text-block p'); // セクション内の全てのテキストブロックを取得
+                    const speed = section.getAttribute('data-speed'); // セクションに設定された表示速度を取得
+                    
+                    function showNextBlock(i) {
+                        if (i < textBlocks.length) {
+                            const block = textBlocks[i];
+                            const text = block.innerHTML;
+                            block.innerHTML = '';
+                            let j = 0;
+
+                            // タイプライター効果でテキストを1文字ずつ表示する関数
+                            function typeWriter() {
+                                if (j < text.length) {
+                                    block.innerHTML += text.charAt(j); // 1文字ずつテキストを追加
+                                    j++;
+                                    setTimeout(typeWriter, speed); // 指定された速度で次の文字を表示
+                                } else {
+                                    block.parentElement.style.opacity = 1; // テキストブロックを表示
+                                    showNextBlock(i + 1); // 次のテキストブロックを表示
+                                }
+                            }
+                            block.parentElement.style.opacity = 1;
+                            typeWriter();
+                        }
+                    }
+
+                    showNextBlock(0); // 最初のテキストブロックを表示
+                });
+            }
+
+            // ページ読み込み時にテキストを順次展開
+            activateTextBlocks();
+        });
+
+    </script>
+    <script>
+        document.querySelectorAll('.click-box').forEach(function(box) {
+            box.style.top = box.getAttribute('data-top');
+            box.style.left = box.getAttribute('data-left');
+        });
+    </script>
+</body>
+</html>
