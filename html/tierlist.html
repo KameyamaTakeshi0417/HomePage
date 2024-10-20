@@ -98,6 +98,17 @@
         <a href="https://docs.google.com/spreadsheets/d/1pyiIvW0BMHmRSd__jbXynZob9DPSCU3F/edit?gid=2030655602#gid=2030655602" target="_blank" class="cta-button">詳細を見る</a>
     </div>
 
-    <script src="../js/tierlist.js"></script>
+    <script src="../js/tierlist.js">
+
+
+    </script>
+    <script>
+        // JavaScriptでdata-descriptionの内容を取得して表示
+        document.querySelectorAll('.image-container').forEach(container => {
+          const img = container.querySelector('img');
+          const description = container.querySelector('.description');
+          description.innerHTML = img.getAttribute('data-description');
+        });
+      </script>
 </body>
 </html>
