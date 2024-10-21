@@ -341,15 +341,14 @@ document.querySelectorAll('.tier-item').forEach(item => {
     item.addEventListener('mouseenter', () => {
         const description = item.getAttribute('data-description');
         descriptionBox.textContent = description;
-        descriptionBox.style.opacity = '1'; // 表示
-        descriptionBox.style.pointerEvents = 'auto'; // アクティブ化
+        descriptionBox.style.display = 'block'; // 表示
     });
 
     item.addEventListener('mouseleave', () => {
-        descriptionBox.style.opacity = '0'; // 非表示
-        descriptionBox.style.pointerEvents = 'none'; // 非アクティブ化
+        descriptionBox.style.display = 'none'; // 非表示
     });
 });
+
 
         </script>
 </body>
