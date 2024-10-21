@@ -110,13 +110,21 @@
 
 
     </script>
-    <script>
-        // JavaScriptでdata-descriptionの内容を取得して表示
-        document.querySelectorAll('.image-container').forEach(container => {
-          const img = container.querySelector('img');
-          const description = container.querySelector('.description');
-          description.innerHTML = img.getAttribute('data-description');
+ <script>
+    // 各 tier-item にホバーしたときにテキストを表示
+    const descriptionBox = document.getElementById('description-box');
+
+    document.querySelectorAll('.tier-item').forEach(item => {
+        item.addEventListener('mouseenter', () => {
+            const description = item.getAttribute('data-description');
+            descriptionBox.textContent = description;
+            descriptionBox.style.display = 'block';
         });
-      </script>
+
+        item.addEventListener('mouseleave', () => {
+            descriptionBox.style.display = 'none';
+        });
+    });
+</script>
 </body>
 </html>
