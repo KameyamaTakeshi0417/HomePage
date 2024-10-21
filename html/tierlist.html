@@ -328,26 +328,27 @@
             <a href="https://docs.google.com/spreadsheets/d/1pyiIvW0BMHmRSd__jbXynZob9DPSCU3F/edit?gid=2030655602#gid=2030655602"
                 target="_blank" class="cta-button">詳細を見る</a>
         </div>
-        <div id="description-box"></div>
+
         <script src="../js/tierlist.js">
 
 
         </script>
         <script>
-            // 各 tier-item にホバーしたときにテキストを表示
-            const descriptionBox = document.getElementById('description-box');
+// 各 tier-item にホバーしたときにテキストを表示
+const descriptionBox = document.getElementById('description-box');
 
-            document.querySelectorAll('.tier-item').forEach(item => {
-                item.addEventListener('mouseenter', () => {
-                    const description = item.getAttribute('data-description');
-                    descriptionBox.textContent = description;
-                    descriptionBox.style.display = 'block';
-                });
+document.querySelectorAll('.tier-item').forEach(item => {
+    item.addEventListener('mouseenter', () => {
+        const description = item.getAttribute('data-description');
+        descriptionBox.textContent = description;
+        descriptionBox.style.opacity = '1'; // 表示
+    });
 
-                item.addEventListener('mouseleave', () => {
-                    descriptionBox.style.display = 'none';
-                });
-            });
+    item.addEventListener('mouseleave', () => {
+        descriptionBox.style.opacity = '0'; // 非表示
+    });
+});
+
         </script>
 </body>
 
