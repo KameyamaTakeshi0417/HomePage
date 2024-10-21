@@ -342,10 +342,12 @@ document.querySelectorAll('.tier-item').forEach(item => {
         const description = item.getAttribute('data-description');
         descriptionBox.textContent = description;
         descriptionBox.style.opacity = '1'; // 表示
+        descriptionBox.style.pointerEvents = 'auto'; // アクティブ化
     });
 
     item.addEventListener('mouseleave', () => {
         descriptionBox.style.opacity = '0'; // 非表示
+        descriptionBox.style.pointerEvents = 'none'; // 非アクティブ化
     });
 });
 

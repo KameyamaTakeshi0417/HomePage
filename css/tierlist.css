@@ -130,8 +130,8 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     max-width: 60%;
     text-align: center;
-    pointer-events: none;
     white-space: pre-wrap;
-    opacity: 0; /* 初期状態では透明 */
-    transition: opacity 0.3s ease; /* スムーズなフェード */
+    opacity: 0; /* 初期状態で透明 */
+    pointer-events: none; /* 初期状態で非アクティブ */
+    transition: opacity 0.3s ease, pointer-events 0s 0.3s; /* スムーズな表示 */
 }
