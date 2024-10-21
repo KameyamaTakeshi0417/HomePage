@@ -58,28 +58,12 @@ body {
 }
 
 .tier-item {
-    position: relative;
-}
-.tier-item::after {
-    content: attr(data-description); /* data-descriptionの内容を表示 */
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
+    flex: 1 1 20%; /* 5つのアイテムを横並びにするため20%の幅 */
+    max-width: 20%;
     box-sizing: border-box;
-    opacity: 0;
-    transition: opacity 0.3s;
-    pointer-events: none; /* マウスイベントを通さない */
-    white-space: pre-wrap; /* 改行を反映する */
+    padding: 10px;
 }
 
-.tier-item:hover::after {
-    opacity: 1; /* ホバー時に表示 */
-}
 .tier-item img {
     width: 100%;
     height: 100%;
