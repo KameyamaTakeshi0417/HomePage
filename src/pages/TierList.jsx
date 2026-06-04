@@ -93,7 +93,7 @@ const TierList = () => {
                   onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.1)'}
                   onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
                 >
-                  <img src={`/HomePage/image/tierImage/${item.id}.${item.imgExt || 'jpg'}`} alt={item.id} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  <img src={`/HomePage/image/tierImage/${item.id}.${item.imgExt || 'jpg'}?v=3`} alt={item.id} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
               ))}
             </div>
