@@ -27,6 +27,10 @@ const Gallery = () => {
           <img src="/HomePage/image/tierImage/tier.png" alt="ゲームプレイリストとtier表" style={{width:'150px', height:'150px'}} />
           <p>ゲームプレイリストとtier表</p>
         </Link>
+        <Link to="/my-products" className="btn-glass">
+          <img src="/HomePage/image/sakura_cover.png" alt="開発中作品：ローグライトシューティング" style={{width:'150px', height:'150px', objectFit:'cover', borderRadius:'8px'}} />
+          <p>開発中作品：ローグライトシューティング</p>
+        </Link>
       </div>
     </>
   );
