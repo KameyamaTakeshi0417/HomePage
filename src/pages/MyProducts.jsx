@@ -11,7 +11,7 @@ const MyProducts = () => {
       <div className="glass-container" style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem', alignItems: 'center' }}>
         <div style={{ flex: '1 1 300px' }}>
           <img 
-            src="/HomePage/image/sakura_cover.png" 
+            src="/HomePage/image/sakura_cover.png?v=2" 
             alt="SakuraSupremeShooter" 
             style={{ width: '100%', borderRadius: '12px', boxShadow: '0 8px 32px rgba(0,0,0,0.5)' }} 
           />
@@ -31,7 +31,7 @@ const MyProducts = () => {
       <div className="glass-container" style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem', alignItems: 'center', flexDirection: 'row-reverse' }}>
         <div style={{ flex: '1 1 300px', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <img 
-            src="/HomePage/image/sakura_proto.png" 
+            src="/HomePage/image/sakura_proto.png?v=2" 
             alt="プロトタイプ版" 
             style={{ width: '100%', borderRadius: '12px', boxShadow: '0 8px 32px rgba(0,0,0,0.5)' }} 
           />
@@ -63,7 +63,7 @@ const MyProducts = () => {
       <div className="glass-container" style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem', alignItems: 'center' }}>
         <div style={{ flex: '1 1 300px' }}>
           <img 
-            src="/HomePage/image/sakura_alpha.png" 
+            src="/HomePage/image/sakura_alpha.png?v=2" 
             alt="開発中のアルファ版" 
             style={{ width: '100%', borderRadius: '12px', boxShadow: '0 8px 32px rgba(0,0,0,0.5)' }} 
           />
